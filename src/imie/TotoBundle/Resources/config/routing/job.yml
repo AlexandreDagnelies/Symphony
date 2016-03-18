@@ -1,0 +1,24 @@
+toto_job_index:
+    path:     /
+    defaults: { _controller: "imieTotoBundle:Job:index" }
+    methods:  GET
+
+toto_job_show:
+    path:     /{id}/show
+    defaults: { _controller: "imieTotoBundle:Job:show" }
+    methods:  GET
+
+toto_job_new:
+    path:     /new
+    defaults: { _controller: "imieTotoBundle:Job:new" }
+    methods:  [GET, POST]
+
+toto_job_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "imieTotoBundle:Job:edit" }
+    methods:  [GET, POST]
+
+toto_job_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "imieTotoBundle:Job:delete" }
+    methods:  DELETE
